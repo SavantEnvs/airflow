@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-base-serialization
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-base-serialization/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_base_serialization
+    libfuzzer: true
+    timeout: 30

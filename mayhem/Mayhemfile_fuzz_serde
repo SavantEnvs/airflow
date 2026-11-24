@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-serde
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-serde/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_serde
+    libfuzzer: true
+    timeout: 30

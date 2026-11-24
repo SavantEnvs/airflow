@@ -1,0 +1,8 @@
+[core]
+parallelism = 32
+dags_folder = %(AIRFLOW_HOME)s/dags
+flag = True
+items = a,b
+js = {"a": [1]}
+[webserver]
+expose_config = False

@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-airflowignore
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-airflowignore/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_airflowignore
+    libfuzzer: true
+    timeout: 30

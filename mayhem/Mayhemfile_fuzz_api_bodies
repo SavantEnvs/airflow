@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-api-bodies
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-api-bodies/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_api_bodies
+    libfuzzer: true
+    timeout: 30

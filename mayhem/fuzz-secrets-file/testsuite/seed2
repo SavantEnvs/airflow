@@ -1,0 +1,4 @@
+CONN_B:
+  conn_type: http
+  host: h
+VAR: [1, 2]

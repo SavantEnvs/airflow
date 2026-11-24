@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: dag-fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dag-fuzz/testsuite
+
+cmds:
+  - cmd: /mayhem/dag_fuzz
+    libfuzzer: true
+    timeout: 30

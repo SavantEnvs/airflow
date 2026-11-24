@@ -1,0 +1,1 @@
+{"value": 5, "schema": {"type": "integer", "minimum": 1, "maximum": 10}}

@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-config-parser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-config-parser/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_config_parser
+    libfuzzer: true
+    timeout: 30

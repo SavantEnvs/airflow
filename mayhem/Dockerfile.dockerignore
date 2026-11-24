@@ -1,0 +1,3 @@
+# Dockerfile-specific ignore file (BuildKit prefers it over the upstream root .dockerignore, which
+# whitelists only the paths the upstream production image needs). The commit image needs the whole
+# checkout, including .git.

@@ -1,0 +1,2 @@
+my_asset
+postgres://host:5432/db/schema/table

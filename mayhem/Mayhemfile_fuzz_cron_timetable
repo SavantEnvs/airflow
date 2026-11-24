@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-cron-timetable
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-cron-timetable/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_cron_timetable
+    libfuzzer: true
+    timeout: 30

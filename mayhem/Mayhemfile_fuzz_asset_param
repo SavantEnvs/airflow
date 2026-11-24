@@ -1,0 +1,10 @@
+project: savantenvs/airflow
+target: fuzz-asset-param
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-asset-param/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_asset_param
+    libfuzzer: true
+    timeout: 30

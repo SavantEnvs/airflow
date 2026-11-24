@@ -1,0 +1,5 @@
+from datetime import datetime
+from airflow.sdk import DAG
+import random
+with DAG("x", start_date=datetime.now(), tags=[str(random.random())]) as dag:
+    pass

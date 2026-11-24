@@ -1,0 +1,1 @@
+{"__type":"dict","__var":{"a":{"__type":"timedelta","__var":3.0},"b":{"__type":"set","__var":[1,2]},"c":{"__type":"datetime","__var":1700000000.0},"d":{"__type":"tuple","__var":["x",1]}}}
